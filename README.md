@@ -7,15 +7,17 @@ This repository contains my submission for the Namoza Developer Assignment. The 
 ## Project Structure
 
 ```
-Namoza-Developer-Assignment
+Namoza Developer Assignment
 │
 ├── README.md
+│
 ├── Task-1
 │   └── GTM-Schema.md
 │
 ├── Task-2
 │   ├── index.html
-│   └── images
+│   ├── PageSpeed-Screenshot.png
+│   └── Images
 │       └── doctor.svg
 │
 └── Task-3
