@@ -437,6 +437,25 @@
         font-weight:500;
     }
 
+    label{
+        display:block;
+        margin-bottom:6px;
+        font-weight:600;
+        color:#333;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+
     </style>
 
 
@@ -600,24 +619,27 @@
 
                 <form id="consultationForm">
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Full Name"
-                        maxlength="50"
-                        required
-                    >
+                    <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Full Name"
+                            maxlength="50"
+                            required
+                        >
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        placeholder="Phone Number"
-                        required
-                        pattern="[0-9]{10}"
-                        maxlength="10"
-                    >
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Phone Number"
+                            required
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                        >
 
-                   <select id="clinic" required>
+                    <label for="clinic">Preferred Clinic</label>
+                    <select id="clinic" required>
 
                         <option value="" selected disabled>
                             Select Preferred Clinic
@@ -657,6 +679,8 @@
         </div>
 
     </section>
+
+    <label for="name" class="visually-hidden">Full Name</label>
 
     <script>
     window.dataLayer = window.dataLayer || [];
